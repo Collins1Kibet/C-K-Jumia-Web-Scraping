@@ -10,8 +10,9 @@ def find_laptop(specs):
     results = []
     for laptop in laptops:
         product_description = laptop.find('h3', class_='name').text
-        price = laptop.find('div', class_='prc').text
-        results.append((product_description, price))
+        if 'SSD' in product_description and specs in product_description:
+            price = laptop.find('div', class_='prc').text
+            results.append((product_description, price))
     
     return results
 
