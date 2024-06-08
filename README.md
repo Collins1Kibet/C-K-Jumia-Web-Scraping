@@ -24,6 +24,6 @@ find_laptop(specs): Function to scrape Jumia Kenya's website for laptops that ma
 - Display the results or a message if no laptops are found.
 
 #### Example
-- Input Specifications: 'SSD 8GB RAM'
+- Input Specifications: 'SSD'
 - Click the "Find Laptops" button.
 - View the results with the product description and price.
